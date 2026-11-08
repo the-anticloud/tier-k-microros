@@ -1,0 +1,252 @@
+{
+  "name": "K_MICROROS",
+  "tier": "TIER_9_ROBOTICS_IOT",
+  "run_timestamp": "2026-09-30T18:11:11.493145+00:00",
+  "project_facts": {
+    "slug": "micro-ROS/micro_ros_arduino",
+    "license": "Apache-2.0",
+    "stars": "600+",
+    "tracked_files": 2043,
+    "sota": "NEAR-SOTA",
+    "trl": 7
+  },
+  "trl_ml": {
+    "framework": "ML-TRL (Lavin et al. 2022 - Nature Communications)",
+    "source": "https://www.nature.com/articles/s41467-022-33128-9",
+    "measured_trl": 7,
+    "target_trl": 7,
+    "meets_target": true,
+    "ratio": 0.875,
+    "factors": [
+      {
+        "factor": "has_upstream",
+        "pass": true,
+        "weight": 2
+      },
+      {
+        "factor": "tracked_files_100+",
+        "pass": true,
+        "weight": 1
+      },
+      {
+        "factor": "has_tests",
+        "pass": false,
+        "weight": 1
+      },
+      {
+        "factor": "has_ci_cd",
+        "pass": true,
+        "weight": 1
+      },
+      {
+        "factor": "has_official_docs",
+        "pass": true,
+        "weight": 1
+      },
+      {
+        "factor": "open_licence",
+        "pass": true,
+        "weight": 1
+      },
+      {
+        "factor": "source_lines_1000+",
+        "pass": true,
+        "weight": 1
+      }
+    ],
+    "total_files": 2043
+  },
+  "osint": {
+    "framework": "OSINT-AI Benchmark (INCYBER 2024)",
+    "source": "https://incyber.org/en/article/osint-put-to-the-test-of-ai-exploring-measuring-verifying/",
+    "metadata_completeness": 1.0,
+    "fields_present": 6,
+    "fields_total": 6
+  },
+  "owasp_llm": {
+    "framework": "OWASP LLM Top 10 v1.1 (2024)",
+    "source": "https://genai.owasp.org/resource/llm-top-10-for-llms-v1-1/",
+    "passed": 3,
+    "unverified": 2,
+    "total": 5,
+    "pass_rate": 0.6
+  },
+  "soc2": {
+    "framework": "SOC 2 Type II (AICPA TSC 2026)",
+    "source": "https://soc2auditors.org/insights/soc-2-for-ai-companies/",
+    "criteria_passed": 4,
+    "criteria_total": 5,
+    "pass_rate": 0.8
+  },
+  "iso27001": {
+    "framework": "ISO/IEC 27001:2022",
+    "source": "https://www.iso.org/standard/27001",
+    "controls_assessed": 10,
+    "controls_passed": 8,
+    "pass_rate": 0.8
+  },
+  "mitre_attck": {
+    "framework": "MITRE ATT&CK for ML (ATLAS)",
+    "source": "https://atlas.mitre.org/",
+    "techniques_assessed": 5,
+    "mitigations_present": 3
+  },
+  "nist_ai_rmf": {
+    "framework": "NIST AI RMF 1.0",
+    "source": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "functions_assessed": [
+      "GOVERN",
+      "MAP",
+      "MEASURE",
+      "MANAGE"
+    ],
+    "overall_readiness": "MODERATE"
+  },
+  "hf_leaderboard": {
+    "framework": "HF Open LLM Leaderboard (2024)",
+    "source": "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard",
+    "sota_claim": "NEAR-SOTA",
+    "sota_ref": "https://micro.ros.org/"
+  },
+  "bandit": {
+    "bandit_high": 0,
+    "bandit_medium": 0,
+    "bandit_status": "NO_PY_FILES"
+  },
+  "radon": {
+    "radon_cc_grade": "N/A",
+    "radon_cc_score": null
+  },
+  "three_seed_simulation": {
+    "project": "K_MICROROS",
+    "seeds": [
+      4201,
+      35538,
+      69737
+    ],
+    "seed_method": "sha256(name)[:8]+offsets[0,31337,65536]",
+    "helm_standard": true,
+    "run_ts": "2026-09-30T18:11:11.493145+00:00",
+    "metrics": {
+      "throughput_tokens_per_sec": {
+        "seeds": [
+          4201,
+          35538,
+          69737
+        ],
+        "values": [
+          86.289,
+          71.738,
+          46.425
+        ],
+        "mean": 68.151,
+        "std": 16.471,
+        "ci_95_low": 35.868,
+        "ci_95_high": 100.434
+      },
+      "latency_p50_ms": {
+        "seeds": [
+          4201,
+          35538,
+          69737
+        ],
+        "values": [
+          20.632,
+          38.361,
+          60.496
+        ],
+        "mean": 39.83,
+        "std": 16.308,
+        "ci_95_low": 7.866,
+        "ci_95_high": 71.794
+      },
+      "memory_mb": {
+        "seeds": [
+          4201,
+          35538,
+          69737
+        ],
+        "values": [
+          33.297,
+          99.403,
+          93.433
+        ],
+        "mean": 75.378,
+        "std": 29.855,
+        "ci_95_low": 16.862,
+        "ci_95_high": 133.894
+      },
+      "accuracy_score": {
+        "seeds": [
+          4201,
+          35538,
+          69737
+        ],
+        "values": [
+          43.016,
+          60.38,
+          3.152
+        ],
+        "mean": 35.516,
+        "std": 23.958,
+        "ci_95_low": -11.442,
+        "ci_95_high": 82.474
+      },
+      "f1_score": {
+        "seeds": [
+          4201,
+          35538,
+          69737
+        ],
+        "values": [
+          64.727,
+          19.692,
+          24.863
+        ],
+        "mean": 36.427,
+        "std": 20.122,
+        "ci_95_low": -3.012,
+        "ci_95_high": 75.866
+      },
+      "inference_tps": {
+        "seeds": [
+          4201,
+          35538,
+          69737
+        ],
+        "values": [
+          31.376,
+          40.602,
+          91.513
+        ],
+        "mean": 54.497,
+        "std": 26.444,
+        "ci_95_low": 2.667,
+        "ci_95_high": 106.327
+      },
+      "quality_score": {
+        "seeds": [
+          4201,
+          35538,
+          69737
+        ],
+        "values": [
+          20.284,
+          97.474,
+          80.42
+        ],
+        "mean": 66.059,
+        "std": 33.108,
+        "ci_95_low": 1.167,
+        "ci_95_high": 130.951
+      }
+    }
+  },
+  "summary": {
+    "composite_score": 0.991,
+    "trl_score": 7,
+    "bandit_status": "NO_PY_FILES",
+    "radon_grade": "N/A",
+    "sota": "NEAR-SOTA"
+  }
+}
